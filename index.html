@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Pappaaaa ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="welcome" id="welcome">
+    <h1>🎁 A Special Gift For Pappaaaa ❤️</h1>
+    <button onclick="openGift()">Open Gift</button>
+</section>
+
+<section class="main-content hidden" id="giftContent">
+
+    <div class="hero">
+
+        <h1>Happy Birthday Pappaaaa ❤️</h1>
+
+        <p>
+            Thank you for your love, sacrifices, guidance and support.
+            Today is all about celebrating the wonderful father you are.
+        </p>
+
+    </div>
+
+    <section class="letters-section">
+
+        <h2>💌 Open Your Birthday Letters 💌</h2>
+
+        <div class="letters-grid">
+
+            <div class="letter-card" onclick="openModal('letter1')">
+                💌 Our Hero
+            </div>
+
+            <div class="letter-card" onclick="openModal('letter2')">
+                💌 Beautiful Memories
+            </div>
+
+            <div class="letter-card" onclick="openModal('letter3')">
+                💌 Best Father
+            </div>
+
+            <div class="letter-card" onclick="openModal('letter4')">
+                💌 We Love You
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="music">
+
+        <audio controls autoplay loop>
+            <source src="assets/music.mp3" type="audio/mp3">
+        </audio>
+
+    </div>
+
+</section>
+
+<audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mp3">
+</audio>
+<!-- LETTER 1 -->
+
+<div id="letter1" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal('letter1')">&times;</span>
+
+        <img src="assets/photo1.jpeg" alt="Photo 1">
+
+        <h1>❤️ Our Hero ❤️</h1>
+
+        <p>
+            Dear Pappaaaa,
+
+            Thank you for always standing beside us,
+            supporting us and protecting us.
+
+            We are lucky to have you in our lives.
+
+            Happy Birthday ❤️
+        </p>
+
+    </div>
+
+</div>
+
+<!-- LETTER 2 -->
+
+<div id="letter2" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal('letter2')">&times;</span>
+
+        <img src="assets/photo2.jpeg" alt="Photo 2">
+
+        <h1>✨ Beautiful Memories ✨</h1>
+
+        <p>
+            Every memory with you is precious.
+
+            Thank you for filling our home with happiness,
+            laughter and warmth.
+
+            We treasure every moment with you.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- LETTER 3 -->
+
+<div id="letter3" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal('letter3')">&times;</span>
+
+        <img src="assets/photo3.jpeg" alt="Photo 3">
+
+        <h1>🌟 Best Father 🌟</h1>
+
+        <p>
+            Thank you for every sacrifice,
+            every lesson and every word of encouragement.
+
+            You inspire us every day.
+
+            Happy Birthday Pappaaaa ❤️
+        </p>
+
+    </div>
+
+</div>
+
+<!-- LETTER 4 -->
+
+<div id="letter4" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal('letter4')">&times;</span>
+
+        <img src="assets/photo4.jpeg" alt="Photo 4">
+
+        <h1>💖 We Love You 💖</h1>
+
+        <p>
+            No matter how old we grow,
+            we will always be your children.
+
+            Thank you for being the best father.
+
+             Poojamma and We love you endlessly ❤️
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
